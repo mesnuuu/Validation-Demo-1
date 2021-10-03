@@ -5,12 +5,12 @@ import javax.validation.constraints.Size;
 
 public class Customer {
 
-	@NotNull
-	@Size(min = 1, message = "first name is required")
+	@NotNull( message = " is required")
+	@Size(min = 5, message = "minimum 5 characters")
 	private String firstName;
 
-	@NotNull
-	@Size(min = 1, message = "last name is required")
+	@NotNull( message = " is required")
+	@Size(min = 3, message = "minimum 3 characters")
 	private String lastName;
 
 	public String getFirstName() {
